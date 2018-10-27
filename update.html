@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+	<div class="container">
+	<nav class="navbar navbar-default">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Serach</a></li>
+        <li><a href="create.html">Create</a></li>
+        <li class="active"><a href="admin.html">Admin</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+	</nav>
+
+	<div class="jumbotron">
+	  <h1>Event Management System</h1>
+	  <p>HKBU Event Management System is a web-based system for department and student societies to broadcast events and activities as well as registration.</p>
+	</div>
+	<form action="">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+			   <label for="eventName">Event Name:</label>
+			   <input type="text" name="event_name" class="form-control" id="eventName" value="Singing Contest">
+			</div>
+			<div class="form-group">
+			   <label>short Description:</label>
+			   <textarea name="short" class="form-control" rows="8">Singing Contest Singing Contest Singing Contest Singing Contest Singing Contest </textarea>
+			</div>
+			<div class="form-group">
+			   <label>full Description:</label>
+			   <textarea name="full" class="form-control" rows="10">Singing Contest Singing Contest Singing Contest Singing Contest Singing Contest Singing Contest Singing Contest Singing Contest </textarea>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label>image URL:</label>
+				<input type="text" name="image_url" class="form-control" value="images/sing.jpg">
+			</div>
+			<div class="form-group">
+				<label>Organizer:</label>
+				<select name="organizer" class="form-control">
+					<option value="">Please pick one:</option>
+					<option value="1" selected="selected">Department Of Music</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Event Date:</label>
+				<input type="text" class="form-control" value="2018-10-02">
+			</div>
+			<div class="form-group">
+				<label>Time:</label>
+				<input type="text" class="form-control" value="09:00 ~ 12:00">
+			</div>
+			<div class="form-group">
+				<label>Venus:</label>
+				<select name="organizer" class="form-control">
+					<option value="">Please pick one:</option>
+					<option value="1" selected="selected">AC Hall</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>Quota:</label>
+				<input type="number" class="form-control" value="200" />
+			</div>
+			<div class="form-group">
+				<input type="checkbox" checked />Highlighted Event
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</div>
+	</form>
+  </div><!-- /.container-fluid -->
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
